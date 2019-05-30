@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/first_pass"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:foregroundGravity="center_vertical|clip_horizontal"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal"
+        android:text="1st Passage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/second_pass"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:foregroundGravity="center_vertical|clip_horizontal"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal"
+        android:text="2nd Passage"
+        app:layout_constraintStart_toEndOf="@+id/first_pass"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/third_pass"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:foregroundGravity="center_vertical|clip_horizontal"
+        android:gravity="clip_horizontal|clip_vertical|center_horizontal"
+        android:text="3rd Passage"
+        app:layout_constraintStart_toEndOf="@+id/second_pass"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:onClick="launchPassageOne"
+        android:id="@+id/first_button"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical|clip_horizontal"
+        android:text="Go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_pass" />
+
+    <Button
+        android:onClick="launchPassageTwo"
+        android:id="@+id/second_button"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical|clip_horizontal"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@+id/first_button"
+        app:layout_constraintTop_toBottomOf="@+id/second_pass" />
+
+    <Button
+        android:onClick="launchPassageThree"
+        android:id="@+id/third_button"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical|clip_horizontal"
+        android:text="Go"
+        app:layout_constraintStart_toEndOf="@+id/second_button"
+        app:layout_constraintTop_toBottomOf="@+id/third_pass" />
+
+</android.support.constraint.ConstraintLayout>
